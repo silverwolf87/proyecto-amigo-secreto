@@ -5,15 +5,10 @@ let amigos=[];
 let amigosSorteados=[];
 let lista=[];
 
-// let listaUl =document.getElementById('listaAmigos');
-// let elementli = document.createElement('li');
-// elementli.textContent = 'andres';
-// listaUl.appendChild(elementli)
-
-
 //creamos una funcion para que cada vez que se escriba un nombre se borre el espacio en la caja:
 
 function borrarCaja(){
+
 
    return document.getElementById('amigo').value='';
 }
@@ -24,7 +19,7 @@ function crearlista(){
  
  lista = document.getElementById('listaAmigos');//llamamos a la lista ul desde el DOM, quien contendrá los elementos li
 
- lista.innerHTML='';
+ lista.innerHTML='';//limpiamos cada vez que se ejecuta la funcion
 
   for (i=0;i<amigos.length;i++){   //iteramos con un for la lista de nombres con el fin de ir agregando los elementos li
 
